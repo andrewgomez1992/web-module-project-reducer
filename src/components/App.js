@@ -6,7 +6,14 @@ import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
 import reducer, { initialState } from '../reducers'
-import { applyNumber, changeOperation, clearDisplay, addMemory, applyMemory, clearMemory } from '../actions/index'
+import {
+  applyNumber,
+  changeOperation,
+  clearDisplay,
+  addMemory,
+  applyMemory,
+  clearMemory
+} from '../actions/index'
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
